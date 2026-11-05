@@ -12,7 +12,7 @@
   <meta property="og:description" content="Entra pela rede que você já usa.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lmpjzs.github.io/l7mrz/">
-  <meta property="og:image" content="https://lmpjzs.github.io/l7mrz/assets/quote.jpg">
+  <meta property="og:image" content="https://lmpjzs.github.io/l7mrz/assets/hero.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
   {
@@ -57,55 +57,31 @@
     }
     .sheet {
       display: grid;
-      gap: 28px;
+      gap: 22px;
     }
     .hero {
       margin: 0;
-      position: relative;
     }
     .hero img {
       display: block;
       width: 100%;
-      height: min(52vw, 280px);
+      height: auto;
+      aspect-ratio: 1376 / 768;
       object-fit: cover;
-      object-position: center 42%;
       border-radius: 22px;
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
     }
-    .hero figcaption {
-      position: absolute;
-      left: 14px;
-      bottom: 12px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(16, 14, 10, 0.72);
-      color: var(--gold);
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .mark {
-      display: inline-grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      margin-bottom: 14px;
-      border-radius: 12px;
-      background: #1c1812;
-      border: 1px solid var(--line);
-      color: var(--gold);
-      font-family: Georgia, "Iowan Old Style", Palatino, serif;
-      font-size: 26px;
-      line-height: 1;
-    }
     h1 {
-      margin: 0;
-      font-family: Georgia, "Iowan Old Style", Palatino, serif;
-      font-size: clamp(40px, 6vw, 64px);
-      font-weight: 600;
-      letter-spacing: -0.03em;
-      line-height: 0.95;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
     }
     .lede {
       margin: 12px 0 0;
@@ -133,6 +109,9 @@
     .redes {
       display: grid;
       gap: 10px;
+    }
+    @media (min-width: 720px) {
+      .redes { grid-template-columns: 1fr 1fr; }
     }
     a.go {
       display: grid;
@@ -169,16 +148,7 @@
     .yt { --accent: #ff5a57; }
     .ig { --accent: #e2a06a; }
     @media (min-width: 880px) {
-      .wrap { padding-top: 48px; }
-      .sheet {
-        grid-template-columns: 1.08fr 0.92fr;
-        gap: 42px;
-        align-items: center;
-      }
-      .hero img {
-        height: min(68vh, 560px);
-        object-position: center;
-      }
+      .wrap { padding-top: 40px; }
     }
   </style>
 </head>
@@ -186,11 +156,9 @@
   <main class="wrap">
     <div class="sheet">
       <figure class="hero">
-        <img src="assets/quote.jpg" width="900" height="588" alt="O dinheiro não aceita desaforo. Tenha ânimo! Vença o Mundo!">
-        <figcaption>L7Mrz</figcaption>
+        <img src="assets/hero.jpg" width="1376" height="768" alt="L7Mrz: pato de cartola e paletó vermelho, à mesa com moedas.">
       </figure>
       <section>
-        <div class="mark" aria-hidden="true">7</div>
         <h1>L7Mrz</h1>
         <p class="lede">Entra pela rede que você já usa.</p>
         <ul class="temas">
